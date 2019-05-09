@@ -59,6 +59,7 @@ export class ToDoList extends Component {
         this.setState({
             taskDescription: '',
             tasks: tasks,
+            addButtonEnabled: false
         })
     }
    
