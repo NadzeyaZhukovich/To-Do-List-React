@@ -1,0 +1,45 @@
+@mixin breakpoint($point) {
+    @if $point == small{
+        @media (min-width: 0px) and (max-width: 480px){
+            @content;
+        }
+    } 
+    @else if $point == medium {
+        @media (min-width: 481px) and (max-width: 768px){
+            @content;
+        }
+    }
+    @else if $point == large {
+        @media (min-width: 769px) and (max-width: 1024px){
+            @content;
+        }
+    }
+    @else if $point == extraLarge {
+        @media (min-width: 1025px){
+            @content;
+        }
+    }
+}
+
+.toDoList{
+    @include breakpoint(large){
+        width: 750px;
+    }
+    @include breakpoint(medium){
+        width: 470px;
+    }
+    @include breakpoint(small){
+        width: 330px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.inputText{
+    @include breakpoint(medium){
+        width: 350px;
+    }
+    @include breakpoint(small){
+        width: 230px;
+    }
+}

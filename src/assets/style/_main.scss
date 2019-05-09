@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import 'variables.scss';
 @import 'mixins.scss';
+
 
 *{
     margin: 0;
     padding: 0;
+    color: $set_color;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn{
+    font-size: 15px;
+    padding: 2px 8px;
+    text-transform: capitalize;
+    margin: 0 15px;
+    border: none;
+    box-shadow: $common_box_shadow;
+    background-color: #ebeef7;
+}
+
+.btn:disabled{
+    color: rgb(165, 165, 165);
 }
