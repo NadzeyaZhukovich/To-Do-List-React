@@ -1,2 +1,29 @@
 @import 'style/_main.scss';
+@import 'components/ToDoItem/ToDoItem.scss';
+
+
+.toDoList{
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: $text_align;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 30px 0;
+}
+
+.createTask{
+    text-align: $text_align;
+}
+
+.inputText{
+    width: 500px;
+    height: 20px;
+    padding: 2px;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: $common_box_shadow;
+}
 
